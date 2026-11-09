@@ -1,0 +1,72 @@
+Screen {
+    layout: vertical;
+}
+
+#main-container {
+    height: 100%;
+}
+
+#sidebar {
+    width: 30;
+    dock: left;
+    height: 100%;
+    border-right: vkey $panel;
+    background: $surface;
+}
+
+#sidebar-title {
+    width: 100%;
+    text-align: center;
+    text-style: bold;
+    padding: 1;
+    background: $primary-darken-1;
+}
+
+#chat-list {
+    height: 1fr;
+    scrollbar-size: 1 1;
+}
+
+ChatListItem {
+    height: 4;
+    padding: 0 1;
+    border-bottom: solid $primary-background;
+}
+
+.chat-item-header {
+    height: 1;
+    width: 100%;
+}
+
+.chat-name {
+    width: 1fr;
+    text-style: bold;
+}
+
+.chat-time {
+    width: auto;
+    color: $text-muted;
+}
+
+.chat-snippet {
+    height: 2;
+    color: $text-muted;
+    overflow: hidden;
+}
+
+#chat-area {
+    width: 1fr;
+    height: 100%;
+}
+
+#message-log {
+    height: 1fr;
+    border: none;
+    padding: 1;
+}
+
+#message-input {
+    dock: bottom;
+    border: solid $primary;
+    margin: 0 1 1 1;
+}
