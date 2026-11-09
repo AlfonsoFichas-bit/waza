@@ -1,0 +1,165 @@
+Screen {
+    layout: vertical;
+    background: #111b21;
+    color: #e9edef;
+}
+
+Header {
+    background: #202c33;
+    color: #e9edef;
+}
+
+Footer {
+    background: #202c33;
+    color: #e9edef;
+}
+
+#main-container {
+    height: 100%;
+}
+
+#sidebar {
+    width: 30;
+    dock: left;
+    height: 100%;
+    border-right: solid #222d34;
+    background: #111b21;
+}
+
+#sidebar-header {
+    height: auto;
+    background: #202c33;
+    padding: 1;
+}
+
+#sidebar-title {
+    width: 100%;
+    text-align: center;
+    text-style: bold;
+    color: #e9edef;
+    padding-bottom: 1;
+}
+
+#search-input {
+    border: tall #2a3942;
+    background: #202c33;
+}
+
+#search-input:focus {
+    border: tall #00a884;
+}
+
+#chat-list {
+    height: 1fr;
+    scrollbar-size: 1 1;
+    background: #111b21;
+}
+
+ChatListItem {
+    height: 4;
+    padding: 0 1;
+    border-bottom: solid #222d34;
+    background: #111b21;
+}
+
+ChatListItem:hover {
+    background: #202c33;
+}
+
+ChatListItem.-active {
+    background: #2a3942;
+}
+
+.chat-item-header {
+    height: 1;
+    width: 100%;
+}
+
+.chat-name {
+    width: 1fr;
+    text-style: bold;
+    color: #e9edef;
+}
+
+.chat-time {
+    width: auto;
+    color: #8696a0;
+}
+
+.chat-snippet {
+    height: 2;
+    color: #8696a0;
+    overflow: hidden;
+}
+
+#chat-area {
+    width: 1fr;
+    height: 100%;
+    background: #0b141a;
+}
+
+#message-container {
+    height: 1fr;
+    padding: 1 2;
+}
+
+MessageBubble {
+    width: 100%;
+    margin-bottom: 1;
+    height: auto;
+}
+
+.bubble-content {
+    padding: 1 2;
+    height: auto;
+    max-width: 70%;
+}
+
+MessageBubble.-sent {
+    align: right top;
+}
+
+MessageBubble.-sent .bubble-content {
+    background: #005c4b;
+    color: #e9edef;
+    border: none;
+    content-align: right middle;
+}
+
+MessageBubble.-received {
+    align: left top;
+}
+
+MessageBubble.-received .bubble-content {
+    background: #202c33;
+    color: #e9edef;
+    border: none;
+}
+
+.msg-sender {
+    color: #53bdeb;
+    text-style: bold;
+}
+
+.msg-time {
+    color: #8696a0;
+    text-align: right;
+    text-style: italic;
+    font-size: 10;
+}
+
+#input-area {
+    dock: bottom;
+    height: auto;
+    background: #202c33;
+    padding: 1;
+}
+
+#message-input {
+    border: none;
+    background: #2a3942;
+}
+
+#message-input:focus {
+    border: none;
+}
