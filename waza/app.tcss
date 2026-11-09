@@ -145,7 +145,6 @@ MessageBubble.-received .bubble-content {
     color: #8696a0;
     text-align: right;
     text-style: italic;
-    font-size: 10;
 }
 
 #input-area {
